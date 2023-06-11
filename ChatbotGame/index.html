@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sleeping Mode Website</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Sleeping mode GIF -->
+  <div id="sleeping-mode">
+    <iframe src="/sleeping copy.gif" width="800" height="800" frameBorder="0" class="giphy-embed" loop="infinite" allowFullScreen></iframe>
+  </div>
+
+  <!-- Terminal page -->
+  <div id="terminal-page" class="hidden">
+    <div id="frame" class="hidden">
+      <div id="title-bar">
+        <span class="title">Terminal</span>
+        <div id="buttons">
+          <div class="button close"></div>
+          <div class="button minimize"></div>
+          <div class="button maximize"></div>
+          <!-- Reset button -->
+          <button id="resetButton">Reset</button>
+        </div>
+      </div>
+      <div id="content">
+        <div id="outputContainer"></div>
+        <div id="characterButtons">
+          <button class="characterButton">character1</button>
+          <span>/</span>
+          <button class="characterButton">character2</button>
+          <span>/</span>
+          <button class="characterButton">character3</button>
+        </div>
+        <div id="outputContainerQuestions">
+          <div class="answers" id="positiveAnswers"></div>
+        <div class="answers" id="negativeAnswers"></div>
+        </div>
+        </div>
+        <div id="outcomeWindow" class="hidden">
+          <div id="outcomeContainer"></div>
+          <div id="timer"></div>
+          <div id="messages"></div>
+          <div id="moodGifs">
+            <img src="/happy.gif" id="toHappy"  width="230" height="240" loop=infinite/>
+            <img src="/sad.gif" id="toSad"  width="230" height="240" loop=infinite/>
+            <img src="/backtoneutral.gif" id="toNeutral"  width="230" height="240" loop=infinite/>
+            <img src="/crying.gif" id="toCry"  width="230" height="240" loop=infinite/>
+          </div>
+          <div id="joyMeterFrame">
+          <div id="joyMeterBar"></div>
+          <div id="joyMeterMarkup">
+            <div class="joyMeterMarkupItem"></div>
+            <div class="joyMeterMarkupItem">90-</div>
+            <div class="joyMeterMarkupItem">80-</div>
+            <div class="joyMeterMarkupItem">70-</div>
+            <div class="joyMeterMarkupItem">60-</div>
+            <div class="joyMeterMarkupItem">50-</div>
+            <div class="joyMeterMarkupItem">40-</div>
+            <div class="joyMeterMarkupItem">30-</div>
+            <div class="joyMeterMarkupItem">20-</div>
+            <div class="joyMeterMarkupItem">10-</div>
+            <div class="joyMeterMarkupItem"></div>
+          </div>
+          </div>
+        </div>
+        <div id="gameover" class="hidden">
+          <img src="/gameover.gif" id="gameOver" class="hidden" width="1200" height="800" loop=infinite/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
